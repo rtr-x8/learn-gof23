@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "5820b218f1327a092671b33a99d0ba68",
+  "content-hash": "5de486ca61be3b1630b98e4d45db98cb",
   "packages": [
     {
       "name": "dnoegel/php-xdg-base-dir",
@@ -1137,16 +1137,16 @@
       },
       "require-dev": {
         "doctrine/coding-standard": "^8.0",
-                "ext-pdo": "*",
-                "ext-phar": "*",
-                "phpbench/phpbench": "^0.13 || 1.0.0-alpha2",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-phpunit": "^0.12",
-                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
+        "ext-pdo": "*",
+        "ext-phar": "*",
+        "phpbench/phpbench": "^0.13 || 1.0.0-alpha2",
+        "phpstan/phpstan": "^0.12",
+        "phpstan/phpstan-phpunit": "^0.12",
+        "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
+      },
+      "type": "library",
+      "autoload": {
+        "psr-4": {
                     "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
                 }
             },
@@ -1178,26 +1178,149 @@
                 },
                 {
                     "url": "https://www.patreon.com/phpdoctrine",
-                    "type": "patreon"
+                  "type": "patreon"
                 },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Finstantiator",
-                    "type": "tidelift"
-                }
+              {
+                "url": "https://tidelift.com/funding/github/packagist/doctrine%2Finstantiator",
+                "type": "tidelift"
+              }
             ],
-            "time": "2020-11-10T18:47:58+00:00"
+      "time": "2020-11-10T18:47:58+00:00"
+    },
+    {
+      "name": "hamcrest/hamcrest-php",
+      "version": "v2.0.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/hamcrest/hamcrest-php.git",
+        "reference": "8c3d0a3f6af734494ad8f6fbbee0ba92422859f3"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/hamcrest/hamcrest-php/zipball/8c3d0a3f6af734494ad8f6fbbee0ba92422859f3",
+        "reference": "8c3d0a3f6af734494ad8f6fbbee0ba92422859f3",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^5.3|^7.0|^8.0"
+      },
+      "replace": {
+        "cordoval/hamcrest-php": "*",
+        "davedevelopment/hamcrest-php": "*",
+        "kodova/hamcrest-php": "*"
+      },
+      "require-dev": {
+        "phpunit/php-file-iterator": "^1.4 || ^2.0",
+        "phpunit/phpunit": "^4.8.36 || ^5.7 || ^6.5 || ^7.0"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "2.1-dev"
+        }
+      },
+      "autoload": {
+        "classmap": [
+          "hamcrest"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "BSD-3-Clause"
+      ],
+      "description": "This is the PHP port of Hamcrest Matchers",
+      "keywords": [
+        "test"
+      ],
+      "support": {
+        "issues": "https://github.com/hamcrest/hamcrest-php/issues",
+        "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
+      },
+      "time": "2020-07-09T08:09:16+00:00"
+    },
+    {
+      "name": "mockery/mockery",
+      "version": "1.4.2",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/mockery/mockery.git",
+        "reference": "20cab678faed06fac225193be281ea0fddb43b93"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/mockery/mockery/zipball/20cab678faed06fac225193be281ea0fddb43b93",
+        "reference": "20cab678faed06fac225193be281ea0fddb43b93",
+        "shasum": ""
+      },
+      "require": {
+        "hamcrest/hamcrest-php": "^2.0.1",
+        "lib-pcre": ">=7.0",
+        "php": "^7.3 || ^8.0"
+      },
+      "conflict": {
+        "phpunit/phpunit": "<8.0"
+      },
+      "require-dev": {
+        "phpunit/phpunit": "^8.5 || ^9.3"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "1.4.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-0": {
+          "Mockery": "library/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "BSD-3-Clause"
+      ],
+      "authors": [
+        {
+          "name": "Pádraic Brady",
+          "email": "padraic.brady@gmail.com",
+          "homepage": "http://blog.astrumfutura.com"
         },
         {
-            "name": "myclabs/deep-copy",
-            "version": "1.10.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "776f831124e9c62e1a2c601ecc52e776d8bb7220"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/776f831124e9c62e1a2c601ecc52e776d8bb7220",
+          "name": "Dave Marshall",
+          "email": "dave.marshall@atstsolutions.co.uk",
+          "homepage": "http://davedevelopment.co.uk"
+        }
+      ],
+      "description": "Mockery is a simple yet flexible PHP mock object framework",
+      "homepage": "https://github.com/mockery/mockery",
+      "keywords": [
+        "BDD",
+        "TDD",
+        "library",
+        "mock",
+        "mock objects",
+        "mockery",
+        "stub",
+        "test",
+        "test double",
+        "testing"
+      ],
+      "support": {
+        "issues": "https://github.com/mockery/mockery/issues",
+        "source": "https://github.com/mockery/mockery/tree/master"
+      },
+      "time": "2020-08-11T18:10:13+00:00"
+    },
+    {
+      "name": "myclabs/deep-copy",
+      "version": "1.10.2",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/myclabs/DeepCopy.git",
+        "reference": "776f831124e9c62e1a2c601ecc52e776d8bb7220"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/776f831124e9c62e1a2c601ecc52e776d8bb7220",
                 "reference": "776f831124e9c62e1a2c601ecc52e776d8bb7220",
                 "shasum": ""
             },
@@ -3047,16 +3170,16 @@
                     "Webmozart\\Assert\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                  "name": "Bernhard Schussek",
-                  "email": "bschussek@gmail.com"
-                }
-            ],
+          "notification-url": "https://packagist.org/downloads/",
+          "license": [
+            "MIT"
+          ],
+          "authors": [
+            {
+              "name": "Bernhard Schussek",
+              "email": "bschussek@gmail.com"
+            }
+          ],
           "description": "Assertions to validate method input/output with nice error messages.",
           "keywords": [
             "assert",
