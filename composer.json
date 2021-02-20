@@ -17,6 +17,7 @@
         }
     },
     "require": {
-        "psy/psysh": "@stable"
+        "psy/psysh": "@stable",
+        "fzaninotto/faker": "^1.9"
     }
 }
