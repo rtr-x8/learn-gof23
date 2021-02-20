@@ -5,8 +5,6 @@ namespace App\StudentCounter;
 
 
 /**
- * 1. docker exec -it
- *
  * Class Main
  * @package App\StudentCounter
  */
