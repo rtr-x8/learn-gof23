@@ -18,6 +18,7 @@
 古いAPIなどをラップする。  
 特定のクラスをラップする。
 
+- `src/DesignPattern/Adapter`
 - `src/App/Adapter01`
 
 ```
@@ -30,10 +31,24 @@
 
 委譲（任せる）とあるが、新しいクラスで古いクラスのインスタンスを作成しているだけ。
 
+- `src/DesignPattern/Adapter`
 - `src/App/Adapter02`
 
 ```
 # docker exec -it learn-gof-php bash
 # psysh
 # App\Adapter02\Main::call();
+```
+
+## TemplateMethod
+
+処理の順序や内容を定めたもの
+
+- `src/DesignPattern/TemplateMethod`
+- `src/App/TemplateMethod`
+
+```
+# docker exec -it learn-gof-php bash
+# psysh
+# App\TemplateMethod\Main::call();
 ```
