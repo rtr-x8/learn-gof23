@@ -61,4 +61,21 @@ class StudentIteratorTest extends TestCase
 
         $iterator->next();
     }
+
+    /**
+     * @test
+     */
+    public function nextしきったら終わり()
+    {
+        $this->expectException(Exception::class);
+
+        $studentList = $this->createStudentList(5);
+        $iterator = $studentList->iterator();
+
+        while ($iterator->hasNext()) {
+            $iterator->next();
+        }
+
+        $iterator->next();
+    }
 }
