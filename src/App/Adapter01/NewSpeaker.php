@@ -4,6 +4,9 @@
 namespace App\Adapter01;
 
 
+use DesignPattern\Adapter\Louder;
+use DesignPattern\Adapter\Speaker;
+
 class NewSpeaker extends Speaker implements Louder
 {
     /**

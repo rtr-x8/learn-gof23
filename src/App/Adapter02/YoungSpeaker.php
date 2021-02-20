@@ -4,8 +4,8 @@
 namespace App\Adapter02;
 
 
-use App\Adapter01\Louder;
-use App\Adapter01\Speaker;
+use DesignPattern\Adapter\Louder;
+use DesignPattern\Adapter\Speaker;
 
 class YoungSpeaker implements Louder
 {

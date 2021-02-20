@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Adapter01;
+namespace DesignPattern\Adapter;
 
 
 class Speaker
