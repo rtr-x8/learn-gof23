@@ -1,0 +1,12 @@
+version: '3'
+services:
+  php:
+    build: ./docker/php
+    container_name: learn-gof-php
+    restart: always
+    ports:
+      - "6080:80"
+    volumes:
+      - ./:/var/www/html
+    env_file:
+      - ./docker/php/.env
