@@ -10,7 +10,7 @@ use Exception;
 
 class StudentList implements Aggregate
 {
-    private array $studentList;
+    private array $studentList = [];
 
     /**
      * @return Iterator

@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Test\App;
-
 
 use Test\TestCase;
 

@@ -39,4 +39,12 @@ class StudentIterator implements Iterator
         $this->index++;
         return $student;
     }
+
+    /**
+     * @return int
+     */
+    public function index(): int
+    {
+        return $this->index;
+    }
 }
