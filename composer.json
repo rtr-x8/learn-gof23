@@ -15,5 +15,8 @@
         "psr-4": {
             "Test\\": "tests/"
         }
+    },
+    "require": {
+        "psy/psysh": "@stable"
     }
 }
